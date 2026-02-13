@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "tw-animate-css"; /* Required for shadcn/ui animations */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  /* Add other variables as needed */
+}
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(240 10% 3.9%);
+  --primary: hsl(240 5.9% 10%);
+  --accent: hsl(240 4.8% 95.9%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --primary: hsl(0 0% 98%);
+  --accent: hsl(240 3.7% 15.9%);
+}
