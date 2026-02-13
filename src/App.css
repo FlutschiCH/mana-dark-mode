@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Custom MTG-inspired styles */
+
+@keyframes mythic-glow {
+  0% { box-shadow: 0 0 5px rgba(255, 170, 0, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(255, 170, 0, 0.4); }
+  100% { box-shadow: 0 0 5px rgba(255, 170, 0, 0.2); }
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mythic-border {
+  border: 2px solid transparent;
+  background: linear-gradient(#121212, #121212) padding-box,
+              linear-gradient(45deg, #b38d46, #f0cb6c, #b38d46) border-box;
+  animation: mythic-glow 4s ease-in-out infinite;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-frame {
+  position: relative;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.card-frame:hover {
+  border-color: var(--mana-purple);
+  transform: translateY(-4px);
 }
 
-.card {
-  padding: 2em;
+.card-frame::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  pointer-events: none;
 }
 
-.read-the-docs {
-  color: #888;
+.mana-text-gradient {
+  background: linear-gradient(to right, #7c3aed, #e11d48);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typography-serif {
+  font-family: 'Beleren Bold', 'Georgia', serif;
+}
+
+.typography-sans {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
 }
