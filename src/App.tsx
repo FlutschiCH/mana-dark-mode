@@ -41,7 +41,8 @@ function App() {
               </p>
               <div className="flex gap-4">
                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold flex items-center gap-2 transition-all">
-                  Read the Meta <ChevronRight size={18} />
+                  {/* Changed 'Read the Meta' to 'View more' as per user request */}
+                  View more <ChevronRight size={18} />
                 </button>
                 <button className="border border-white/10 hover:bg-white/5 px-8 py-4 rounded-lg font-bold transition-all">
                   View Set Gallery
