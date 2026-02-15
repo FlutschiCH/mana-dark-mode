@@ -33,7 +33,7 @@ function App() {
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 typography-serif leading-tight">
                 Slivers of the Mists: <br />
-                <span className="mana-text-gradient">Noone Will Be One</span>
+                <span className="mana-text-gradient">No One Will Be One</span>
               </h1>
               <p className="text-slate-400 text-lg mb-8 max-w-lg">
                 The compleation of the multiverse begins here. We break down the most impactful mechanics, 
@@ -42,7 +42,7 @@ function App() {
               <div className="flex gap-4">
                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-bold flex items-center gap-2 transition-all">
                   {/* Changed 'Read the Meta' to 'View more' as per user request */}
-                  View more <ChevronRight size={18} />
+                  Read Full Analysis <ChevronRight size={18} />
                 </button>
                 <button className="border border-white/10 hover:bg-white/5 px-8 py-4 rounded-lg font-bold transition-all">
                   View Set Gallery
