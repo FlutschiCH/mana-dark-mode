@@ -32,7 +32,6 @@ function App() {
                 Latest Set Deep Dive
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 typography-serif leading-tight">
-                {/* Renamed to 'Slivers of the Mists' */}
                 Slivers of the Mists: <br />
                 <span className="mana-text-gradient">All Will Be One</span>
               </h1>
