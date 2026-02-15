@@ -33,7 +33,7 @@ function App() {
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 typography-serif leading-tight">
                 Slivers of the Mists: <br />
-                <span className="mana-text-gradient">All Will Be One</span>
+                <span className="mana-text-gradient">Noone Will Be One</span>
               </h1>
               <p className="text-slate-400 text-lg mb-8 max-w-lg">
                 The compleation of the multiverse begins here. We break down the most impactful mechanics, 
